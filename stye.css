@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  scroll-behavior: smooth;
+  font-family: "Fustat", sans-serif;
+  font-size: 18px;
+  line-height: 1.3;
+}
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ccc;
+  font-size: 12px;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccc;
+  font-size: 12px;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #ccc;
+  font-size: 12px;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ccc;
+  font-size: 12px;
+}
+.container {
+  max-width: 1257px !important;
+  margin: 0 auto;
+}
+.container-form {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+
+  padding: 20px;
+}
+img {
+  max-width: 100%;
+}
+.m-auto {
+  margin: 0 auto;
+}
+.font-700{
+    font-weight: 700;
+}
+
+.bg-primary {
+  background-color: #1b412a !important;
+}
+.bg-green{
+    background-color: #448260;
+}
+.bg-light-green{
+    background-color: #e7fced;
+}
+.bg-dark-blue{
+    background-color: #1b7a84;
+}
+.bg-blue{
+    background-color: #3b5b85;
+}
+.bg-light-blue{
+    background-color: #eaf2ff;
+}
+.text-link {
+  text-decoration: none;
+}
+.text-1{
+    font-size:56px;
+    line-height: 60px;
+}
+.text-2{
+    font-size:40px;
+    font-weight: 600;
+}
+.text-3{
+    font-size:26px;
+}
+.text-4 {
+  font-size: 18px;
+}
+ul li {
+  list-style: none;
+  padding: 8px 0;
+}
+.text-center {
+  text-align: center;
+}
+.m-5 {
+  margin: 30px 0;
+}
+.pt-10 {
+  padding: 50px 0;
+}
+.flex {
+  display: flex;
+}
+.tagline{
+    background-color: #DFF1C2;
+    border-color: #84CC16;
+    border-style: solid;
+    border-width: 1px;
+    padding: 4px 18px;
+    border-radius: 8px;
+}
+.bg-iphone {
+  min-height: 500px;
+  background-position: center 0;
+}
+.d-inline-block {
+  display: inline-block;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.center-block{
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+        font-size: 18px;
+    }
+}
+.btn {
+  background-color: blue;
+  color: white;
+  border-radius: 25px;
+  min-width: 100px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: blue;
+}
+
+
+
+.text-gradient {
+  font-size: 21px;
+  background: -webkit-linear-gradient(
+    356deg,
+    #0090f7,
+    #ba62fc,
+    #f2416b,
+    #f55600
+  );
+  background: linear-gradient(94deg, #0090f7, #ba62fc, #f2416b, #f55600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.footer-container {
+  background-color: #041b0b;
+  padding: 50px 40px;
+  border-radius: 16px;
+  h2{
+    font-size: 52px;
+  }
+}
+.footer-logo{
+    flex: 1
+}
+
+.footer-content {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 60px;
+}
+.footer-top{
+    padding: 0 0 55px 0;
+    border-bottom: 1px solid gray;
+}
+
+.quick-links{
+    flex-grow: 1;
+}
+
+/* body-content */
+.item-grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item{
+    padding: 30px;
+    border-radius: 24px;
+}
+[class*="item-"]{
+    min-height: 250px;
+    img{
+        transition: all 0.3s linear;
+
+    }
+}
+.item-1{
+    background-image: url('https://intense.team/wp-content/uploads/2025/01/Parent-Group-e1737512870954.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: #E7F2AE;
+    grid-row: span 4;
+}
+.item-3,.item-6{
+      grid-row: span 2;
+}
+.item-4{
+    padding-bottom: 0;
+}
+.item-2, .item-4,.item-6{
+    color: white;
+}
+.icon-animation{
+    position: relative;
+    img{
+        height: 100%;
+    }
+    .items-2{
+        position: absolute;
+        top: 10px;
+    }
+}
+.item:hover{
+    img{
+        transform: rotate(-30deg);
+    }
+    .icon-animation{
+        .items-1{
+            opacity: 0;
+            animation: spin 0.2s linear;
+            /* transform: translateZ(-10px) rotate(-30deg); */
+        }
+    }
+}
+
+@keyframes spin {
+  0% {top: 0px; transform: translateZ(0) rotate(0); opacity: 1;}
+  100% {top: 200px;transform: translateZ(-10px) rotate(-30deg); opacity: 0;}
+}
+/* chart */
+.chart{
+    gap: 20px;
+}
+.chart-item{
+    height: 100px;
+    width: 20px;
+    background-color: white;
+    gap: 20px;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
